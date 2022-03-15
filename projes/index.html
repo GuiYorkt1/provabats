@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header><p>Velocidade</p>
+    </header>
+ <div class="container1">
+ <p>home</p>
+<p>sobre</p>
+
+ </div>
+    <div class="container">
+        
+        <div class="informacoes">
+            <div class="form">
+                <p>Calculo</p>
+     
+             <input class="input" id="pt1" placeholder="informe o documento">
+             <input class="input" id="pt2" placeholder=" informe o tempo">
+             <button class="btn" onClick="dividir()" >calcular</button>
+             <button class="btn" onclick="limpar()">Limpar</button>
+            </div>
+        </div> 
+    </div>
+        
+       <div class="container">
+        
+           <div class="informacoes">
+              <div class="form">
+                <p>resultado</p>
+                <div class="resultado">
+                    <textarea id="mostrar" cols="20" rows="10"></textarea>
+                   
+                </div>
+                </div>
+           </div> 
+       </div>
+<div class="footer">
+    <footer>
+     <ul>Uma família viaja de São Paulo para o Rio de Janeiro, para passar as férias. A viagem
+        tem duração de 6 horas em um percurso de 435 km. Qual a velocidade média do automóvel?
+        </ul>
+     
+
+    </footer>
+</div>
+<script>
+  resultado = []
+
+
+function dividir() {
+    num1 = document.getElementById("pt1").value;
+    num2 = document.getElementById("pt2").value;
+    resultado.push((num1 / num2))
+    console.log(resultado);
+    document.getElementById("mostrar").value = resultado;
+}
+ function limpar()
+ {
+     window.location.reload()
+ }
+</script>
+
+</body>
+</html>
